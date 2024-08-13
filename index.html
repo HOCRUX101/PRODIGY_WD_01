@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Dealership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Porsche Dealership</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Welcome to Porsche Dealership</h1>
+        <p>Experience the thrill of driving a Porsche.</p>
+    </section>
+
+    <section id="models" class="section">
+        <h2>Our Models</h2>
+        <div class="car-model" onclick="showDetails('model1')">
+            <img src="im1.jpg" alt="Porsche 911">
+            <h3>Porsche 911</h3>
+        </div>
+        <div class="car-model" onclick="showDetails('model2')">
+            <img src="img2.jpg" alt="Porsche Cayenne">
+            <h3>Porsche Cayenne</h3>
+        </div>
+        <!-- Add more car models as needed -->
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to keep your Porsche in top condition.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <input type="name" id="msg" name="message" required>
+            
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Porsche Dealership. All rights reserved.</p>
+    </footer>
+
+    <div id="modelDetails" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <h2>Model Details</h2>
+            <p id="modelDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
